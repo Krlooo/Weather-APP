@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-APP</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="bg-gradient-to-r from-[#6441a5] to-[#2a0845] w-screen h-screen flex items-center justify-center">
+        <section id="screenMain"
+            class=" overflow-hidden bg-[#185a9d] h-1/6 duration-500 transition-all w-8/12 max-w-2xl shadow-2xl rounded border border-black border-2">
+
+            <div class="transition-all mx-auto mt-10 text-center flex justify-center">
+                <article class="w-10/12 h-16 flex justify-between items-center">
+                    <input type="text" id="searchInput"
+                        class=" text-center transition-all h-16 w-8/12 flex items-center text-[#6441a5] text-4xl border-2 border-black font-bold uppercase">
+                    <button id="searchBtn" type="submit"
+                        class="h-16 w-16 border-2 border-red-600 rounded-full  transition-all hover:bg-red-600 hover:text-white"><span
+                            class="material-symbols-outlined text-6xl ">
+                            search
+                        </span></button>
+                </article>
+            </div>
+            <div id="weatherScreen" class="h-fit ml-5 hidden transition-all duration-1000 p-10">
+                <div class="text-center flex justify-center font-bold text-4xl w-fit mx-auto  bg-gray-100 rounded-full">
+                    <h1 id="p_location"
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-red-900 to-yellow-900 py-2 px-10">
+                    </h1>
+                </div>
+                <div id="temp" class="flex items-center justify-between content-center h-1/2">
+                    <p id="p_temp" class="text-4xl font-bold text-white"></p>
+                    <img id="img_temp" class="w-[64px] h-[64px]" src="">
+                </div>
+                <div class="text-center mt-3 flex justify-between gap-20">
+                    <div class=>
+                        <p class="text-2xl text-white mb-3">Sensación térmica.</p>
+                        <div class="flex justify-center bg-black w-fit mx-auto px-2 py-1 rounded-full">
+                            <span class="material-symbols-outlined text-white">
+                                ac_unit
+                            </span>
+                            <p id="p_feels" class="text-1xl text-white font-bold"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-2xl text-white mb-3">Velocidad del viento.</p>
+                        <div
+                            class="flex text-center justify-center flex justify-center bg-black w-fit mx-auto px-2 py-1 rounded-full">
+                            <span class="material-symbols-outlined text-white">
+                                airware
+                            </span>
+                            <p id="p_wind" class="text-1xl text-white font-bold"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
