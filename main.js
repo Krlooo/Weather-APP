@@ -65,7 +65,7 @@ function printOnscreen() {
         if (weatherScreen.classList.contains('hidden') && !(screenMain.classList.contains('h-96'))) {
 
             weatherScreen.classList.toggle('hidden');
-            screenMain.className += " h-[400px]";
+            screenMain.className += " h-screen md:h-[400px]";
 
 
         };
